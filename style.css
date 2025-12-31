@@ -677,5 +677,54 @@ section:not(.hero):not(.stats) {
     
 }
 
+/* Mobile header fix */
+@media (max-width: 768px) {
+  header,
+  .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 16px;
+  }
 
+  .logo img {
+    max-width: 120px;
+    height: auto;
+  }
+
+  .menu-toggle {
+    margin-left: auto;
+  }
+}
+
+@media (max-width: 768px) {
+  #about {
+    text-align: center;
+    padding: 40px 20px;
+  }
+
+  #about h2,
+  #about h3 {
+    text-align: center;
+  }
+
+  #about p {
+    text-align: center;
+    line-height: 1.6;
+  }
+}
+
+@media (max-width: 768px) {
+  .management-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .management-card img {
+    margin: 0 auto 15px;
+    display: block;
+  }
+}
 
