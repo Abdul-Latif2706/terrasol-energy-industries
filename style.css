@@ -33,7 +33,7 @@ img {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 12px 30px;
+    padding: 12px 20px;
     transition: all 0.3s ease;
 }
 
@@ -50,8 +50,9 @@ img {
 }
 
 .logo img {
-    height: 46px;
-    width: auto;
+    width: 120px;  /* reduce size */
+    max-width: 100%;
+    height: auto;
 }
 
 .logo-text{
@@ -84,8 +85,8 @@ img {
 }
 
 .menu-toggle {
-    display: none;
-    font-size: 28px;
+    margin-left: 20px; /* distance from logo */
+    font-size: 26px;
     cursor: pointer;
 }
 
@@ -480,6 +481,16 @@ section p {
     .hero-buttons .btn {
         width: 220px;
         text-align: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .logo img {
+        width: 100px;
+    }
+
+    .menu-toggle{
+        margin-left: 30px;
     }
 }
 
